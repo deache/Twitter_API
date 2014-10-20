@@ -5,8 +5,8 @@ $consumersecret = "XXXXXXXXXXXXXXXXXXXXXXXX";
 $accesstoken = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
 $accesstokensecret = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
 
-function getConnectionWithAccessToken($cons_key, $cons_secret, $oauth_token, $oauth_token_secret) {
-  $connection = new TwitterOAuth($cons_key, $cons_secret, $oauth_token, $oauth_token_secret);
+function getConnectionWithAccessToken($consumerkey, $consumersecret, $accesstoken, $accesstokensecret) {
+  $connection = new TwitterOAuth($consumerkey, $consumersecret, $accesstoken, $accesstokensecret);
   return $connection;
 }
   
@@ -18,5 +18,5 @@ $tweets = $connection->get('search/tweets', array(
 		'include_entities' => false, // No nos interesa información adicional
 		));
 
-	echo json_encode($tweets);
+echo json_encode($tweets);
 ?>
