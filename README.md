@@ -1,7 +1,8 @@
-API de Twitter para PHP
+Ejemplo API de Twitter para PHP
 ==========
 
 Ejemplo para utilizar el API de twitter haciendo una peticion de una determinada cuenta de twitter con PHP 
+con la biblioteca twitteroauth
 
 ==========
 Antes que nada deberan de registrarse como Twitter Developers 
