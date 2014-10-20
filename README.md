@@ -13,12 +13,11 @@ todo esto para obtener tus llaves de acceso:
 * accesstoken
 * accesstokensecret
 
-
 <h4>Usando twitteroauth PHP library</h4>
 
 <p>Descargar la biblioteca de  @abraham recomendada por Twitter</p>
 <a href="https://dev.twitter.com/overview/api/twitter-libraries">twitteroauth by @abraham</a>
-<p>(ó directamente desde el ejemplo)</p>
+<p>(ó directamente desde el <a href="https://github.com/deache/Twitter_API_Example/tree/master/example">ejemplo</a>)</p>
 
 =========
 <h3>Funcion para Conectar</h3>
