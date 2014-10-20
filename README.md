@@ -18,7 +18,7 @@ todo esto para obtener tus llaves de acceso:
 
 <p>Descargar la biblioteca de  @abraham recomendada por Twitter</p>
 <a href="https://dev.twitter.com/overview/api/twitter-libraries">twitteroauth by @abraham</a>
-
+=========
 <h3>Funcion para Conectar</h3>
 <pre>
 $consumerkey = "XXXXXXXXXXXXXXXXXXXXX"; //tu consumerkey
