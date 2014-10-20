@@ -1,0 +1,28 @@
+*{
+	font-family: 'Ruda', sans-serif;
+}
+body{
+	background-image: url('../img/fondo.gif');
+	color: #fff;
+}
+table{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+th{
+	background-color: #628c85;
+	color: #fff;
+}
+tr{
+	background-color: #7fafa7;
+	border: 2px solid transparent;
+}
+
+tr:nth-child(2n+1){
+	background-color: #fff;
+	color: #638983;
+}
+td{
+	border-color: transparent;
+}
