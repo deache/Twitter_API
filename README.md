@@ -18,6 +18,7 @@ todo esto para obtener tus llaves de acceso:
 
 <p>Descargar la biblioteca de  @abraham recomendada por Twitter</p>
 <a href="https://dev.twitter.com/overview/api/twitter-libraries">twitteroauth by @abraham</a>
+<p>(ó directamente desde el ejemplo)</p>
 
 =========
 <h3>Funcion para Conectar</h3>
