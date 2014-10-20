@@ -56,3 +56,49 @@ $tweets = $connection->get('search/tweets', array(
 <pre>
 echo json_encode($tweets);
 </pre>
+
+=========
+<h3>Capturando JSON con jQuery</h3>
+<p>para obtener el json solo basta con usar la funcion de jQuery getJSON y hacer un append en donde quieras mostrar la informacion</p>
+
+<h5>Append en table</h5>
+<p>De una tabla sin contenido (pero con cabeceras) </p>
+
+```html
+<table>
+	<thead>
+		<th>Imagen</th>
+		<th>Nombre</th>
+		<th>Tweet</th>
+		<th>Location</th>
+	</thead>
+	<tbody id='tweets'>
+		
+	</tbody>
+</table>
+```
+
+<p>Un poco de jQuery</p>
+```js 
+$("document").ready(function(){
+	var url = "get.php";
+	$.getJSON( url, {
+            accion: "select"
+	})
+         .done(function( data ) {
+         	console.log(data);
+           str = "";
+           $.each(data.statuses, function(index, item){
+           		str+="<tr>"
+                str+= "	<td><img src='"+item.user.profile_image_url+"'></td>";
+                str+= "	<td>"+item.user.screen_name+"</td>";
+                str+= "	<td>"+item.text+"</td>";
+                str+= "	<td>"+item.user.location+"</td>";
+                str+="</tr>"
+           });
+           $("#tweets").append(str);
+        });
+});
+```
+
+<p><i>Pueden ver todo el JSON en consola ya que mande todo el data en console.log(data)</i></p>
